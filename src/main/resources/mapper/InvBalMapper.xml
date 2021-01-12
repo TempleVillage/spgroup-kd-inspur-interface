@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingdee.dao.InvBalInspurMapper" >
+  <resultMap id="BaseResultMap" type="com.kingdee.model.po.InvBal" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="vfid" property="vfid" jdbcType="VARCHAR" />
+    <result column="vgsdm" property="vgsdm" jdbcType="VARCHAR" />
+    <result column="vwlbm" property="vwlbm" jdbcType="VARCHAR" />
+    <result column="vpch" property="vpch" jdbcType="VARCHAR" />
+    <result column="nje" property="nje" jdbcType="DECIMAL" />
+    <result column="nsl" property="nsl" jdbcType="DECIMAL" />
+    <result column="vjldw" property="vjldw" jdbcType="VARCHAR" />
+    <result column="crkrq" property="crkrq" jdbcType="CHAR" />
+    <result column="dcjrq" property="dcjrq" jdbcType="DATE" />
+    <result column="dxgrq" property="dxgrq" jdbcType="DATE" />
+    <result column="vqj" property="vqj" jdbcType="CHAR" />
+  </resultMap>
+</mapper>

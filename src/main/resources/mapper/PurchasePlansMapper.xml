@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingdee.dao.PurchasePlansMapper" >
+  <resultMap id="BaseResultMap" type="com.kingdee.model.po.PurchasePlans" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="K_PURCHASEPLANS" property="kPurchaseplans" jdbcType="VARCHAR" />
+    <result column="MATERIALCODE" property="materialcode" jdbcType="VARCHAR" />
+    <result column="MATERIALNAME" property="materialname" jdbcType="VARCHAR" />
+    <result column="SPEC" property="spec" jdbcType="VARCHAR" />
+    <result column="PRIPURUNITID" property="pripurunitid" jdbcType="VARCHAR" />
+    <result column="PLANCOMPANYID" property="plancompanyid" jdbcType="VARCHAR" />
+    <result column="CREATOR" property="creator" jdbcType="VARCHAR" />
+    <result column="QUANTITY" property="quantity" jdbcType="DECIMAL" />
+    <result column="ERPPRBILLCODE" property="erpprbillcode" jdbcType="VARCHAR" />
+    <result column="ERPPRBILLITEMCODE" property="erpprbillitemcode" jdbcType="VARCHAR" />
+    <result column="FISCALYEAR" property="fiscalyear" jdbcType="CHAR" />
+    <result column="FISCALPERIOD" property="fiscalperiod" jdbcType="CHAR" />
+    <result column="GSLASTTIME" property="gslasttime" jdbcType="DATE" />
+    <result column="ERPLASTTIME" property="erplasttime" jdbcType="DATE" />
+    <result column="ERPCODE" property="erpcode" jdbcType="VARCHAR" />
+    <result column="PLANSTATE" property="planstate" jdbcType="VARCHAR" />
+    <result column="WRONGSTSTE" property="wrongstste" jdbcType="VARCHAR" />
+    <result column="TEXT1" property="text1" jdbcType="VARCHAR" />
+    <result column="TEXT2" property="text2" jdbcType="VARCHAR" />
+    <result column="TEXT3" property="text3" jdbcType="VARCHAR" />
+    <result column="TEXT4" property="text4" jdbcType="VARCHAR" />
+    <result column="TEXT5" property="text5" jdbcType="VARCHAR" />
+    <result column="DATE1" property="date1" jdbcType="DATE" />
+    <result column="DATE2" property="date2" jdbcType="DATE" />
+  </resultMap>
+</mapper>

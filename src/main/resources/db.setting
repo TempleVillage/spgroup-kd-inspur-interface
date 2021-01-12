@@ -1,0 +1,22 @@
+## db.setting文件
+
+#广大纸业数据源
+[group_gdzy]
+url = jdbc:sqlserver://218.69.112.158:1433;DatabaseName=AIS20190314183308
+user = kdsa
+pass = p@ssw0rd9613
+
+[group_db2]
+#url = jdbc:mysql://<host2>:<port>/<database_name>
+#username = 用户名
+#password = 密码
+
+## 可选配置
+# 是否在日志中显示执行的SQL
+showSql = true
+# 是否格式化显示的SQL
+formatSql = false
+# 是否显示SQL参数
+showParams = true
+# 打印SQL的日志等级，默认debug，可以是info、warn、error
+sqlLevel = debug

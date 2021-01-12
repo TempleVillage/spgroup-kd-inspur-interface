@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingdee.dao.SupplierInspurMapper" >
+  <resultMap id="BaseResultMap" type="com.kingdee.model.po.Supplier" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="vfid" property="vfid" jdbcType="VARCHAR" />
+    <result column="vgsdm" property="vgsdm" jdbcType="VARCHAR" />
+    <result column="vgysbm" property="vgysbm" jdbcType="VARCHAR" />
+    <result column="vgysmc" property="vgysmc" jdbcType="VARCHAR" />
+    <result column="vszgj" property="vszgj" jdbcType="VARCHAR" />
+    <result column="vszss" property="vszss" jdbcType="VARCHAR" />
+    <result column="vgysfldm" property="vgysfldm" jdbcType="VARCHAR" />
+    <result column="dcjrq" property="dcjrq" jdbcType="DATE" />
+    <result column="dxgrq" property="dxgrq" jdbcType="DATE" />
+  </resultMap>
+</mapper>

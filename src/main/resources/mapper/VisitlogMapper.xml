@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingdee.dao.VisitlogMapper">
+  <resultMap id="BaseResultMap" type="com.kingdee.model.vo.Visitlog">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="VARCHAR" property="id" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="time" jdbcType="TIMESTAMP" property="time" />
+    <result column="params" jdbcType="VARCHAR" property="params" />
+    <result column="operation" jdbcType="VARCHAR" property="operation" />
+    <result column="method" jdbcType="VARCHAR" property="method" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="message" jdbcType="VARCHAR" property="message" />
+    <result column="runtime" jdbcType="VARCHAR" property="runtime" />
+
+  </resultMap>
+</mapper>

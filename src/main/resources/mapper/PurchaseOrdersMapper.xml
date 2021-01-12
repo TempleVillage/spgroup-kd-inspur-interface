@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingdee.dao.PurchaseOrdersMapper" >
+  <resultMap id="BaseResultMap" type="com.kingdee.model.po.PurchaseOrders" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="K_PURCHASEORDERS" property="kPurchaseorders" jdbcType="VARCHAR" />
+    <result column="PURORDERCODE" property="purordercode" jdbcType="VARCHAR" />
+    <result column="PURORDERID" property="purorderid" jdbcType="VARCHAR" />
+    <result column="CREATEDATE" property="createdate" jdbcType="CHAR" />
+    <result column="FISCALYEAR" property="fiscalyear" jdbcType="CHAR" />
+    <result column="FISCALPERIOD" property="fiscalperiod" jdbcType="CHAR" />
+    <result column="VENDORCODE" property="vendorcode" jdbcType="VARCHAR" />
+    <result column="VENDORADDRESS" property="vendoraddress" jdbcType="VARCHAR" />
+    <result column="VENDORLINKMAN" property="vendorlinkman" jdbcType="VARCHAR" />
+    <result column="LSWLDW_WLDWBH" property="lswldwWldwbh" jdbcType="VARCHAR" />
+    <result column="LSWLDW_DWMC" property="lswldwDwmc" jdbcType="VARCHAR" />
+    <result column="LSWLDW_CERTIFICATE" property="lswldwCertificate" jdbcType="VARCHAR" />
+    <result column="CREATOR" property="creator" jdbcType="VARCHAR" />
+    <result column="TOTALTAXINVALUE" property="totaltaxinvalue" jdbcType="DECIMAL" />
+    <result column="CURRENCY" property="currency" jdbcType="VARCHAR" />
+    <result column="ORDERSTATE" property="orderstate" jdbcType="VARCHAR" />
+    <result column="TEXT1" property="text1" jdbcType="VARCHAR" />
+    <result column="TEXT2" property="text2" jdbcType="VARCHAR" />
+    <result column="TEXT3" property="text3" jdbcType="VARCHAR" />
+    <result column="TEXT4" property="text4" jdbcType="VARCHAR" />
+    <result column="TEXT5" property="text5" jdbcType="VARCHAR" />
+    <result column="DATE1" property="date1" jdbcType="DATE" />
+    <result column="DATE2" property="date2" jdbcType="DATE" />
+  </resultMap>
+</mapper>

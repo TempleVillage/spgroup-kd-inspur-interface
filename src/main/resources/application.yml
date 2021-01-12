@@ -1,0 +1,77 @@
+server:
+  port: 9000
+  servlet:
+    context-path: /job
+
+spring:
+  # freemarker
+  freemarker:
+    # 是否开启缓存 生产环境设置true
+    cache: true
+    charset: UTF-8
+    content-type: text/html
+    suffix: .html
+    template-loader-path: classpath:/templates
+    settings:
+      # 解决页面中取空值出现的异常
+      classic_compatible: true
+      template_update_delay: 0
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      first:  #数据源1
+        driverClassName: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://127.0.0.1:3306/kkb_test?useUnicode=true&useSSL=false&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+        username: root
+        password: root
+      second:  #数据源2
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@10.100.100.221:1521:ORCL
+        username: limin01
+        password: 5899ERP
+      wc:  #数据源王朝 电采平台使用，采购申请单往里存数据，采购订单从这里取数据推向 Cloud WebAPI
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@10.100.100.221:1521:ORCL
+        username: adminwc
+        password: adminWC
+      lm:  #数据源利民 电采平台使用，采购申请单往里存数据，采购订单从这里取数据推向 Cloud WebAPI
+        driverClassName: oracle.jdbc.driver.OracleDriver
+        url: jdbc:oracle:thin:@10.100.100.221:1521:ORCL
+        username: adminlm
+        password: adminLM
+  quartz:
+    #相关属性配置
+    properties:
+      org:
+        quartz:
+          scheduler:
+            instanceName: clusteredScheduler
+            instanceId: AUTO
+          jobStore:
+            class: org.quartz.impl.jdbcjobstore.JobStoreTX
+            driverDelegateClass: org.quartz.impl.jdbcjobstore.StdJDBCDelegate
+            tablePrefix: QRTZ_
+            isClustered: true
+            clusterCheckinInterval: 10000
+            useProperties: false
+          threadPool:
+            class: org.quartz.simpl.SimpleThreadPool
+            threadCount: 10
+            threadPriority: 5
+            threadsInheritContextClassLoaderOfInitializingThread: true
+    #数据库方式
+    job-store-type: jdbc
+# 分页配置
+pagehelper:
+  helper-dialect: mysql
+  reasonable: true
+  support-methods-arguments: true
+  params: count=countSql
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.kingdee.model
+
+# mybatis日志输出级别
+logging:
+  level:
+    com.kingdee.dao: info

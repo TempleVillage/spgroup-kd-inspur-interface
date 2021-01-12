@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingdee.dao.InAndOutInspurMapper">
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kingdee.model.po.InAndOut">
+        <id column="vfid" property="vfid"/>
+        <result column="vgsdm" property="vgsdm"/>
+        <result column="vdjh" property="vdjh"/>
+        <result column="vxmh" property="vxmh"/>
+        <result column="vydlx" property="vydlx"/>
+        <result column="vwlbm" property="vwlbm"/>
+        <result column="vpch" property="vpch"/>
+        <result column="nsl" property="nsl"/>
+        <result column="vjldw" property="vjldw"/>
+        <result column="nje" property="nje"/>
+        <result column="vhblx" property="vhblx"/>
+        <result column="nzhhl" property="nzhhl"/>
+        <result column="ccrkrq" property="ccrkrq"/>
+        <result column="dcjrq" property="dcjrq"/>
+        <result column="dxgrq" property="dxgrq"/>
+    </resultMap>
+
+</mapper>

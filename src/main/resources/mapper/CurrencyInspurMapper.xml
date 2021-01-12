@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingdee.dao.CurrencyInspurMapper">
+    <resultMap id="BaseResultMap" type="com.kingdee.model.po.Currency">
+        <!--
+          WARNING - @mbg.generated
+        -->
+        <result column="vfid" jdbcType="VARCHAR" property="vfid"/>
+        <result column="vgsdm" jdbcType="VARCHAR" property="vgsdm"/>
+        <result column="vdm" jdbcType="VARCHAR" property="vdm"/>
+        <result column="vmc" jdbcType="VARCHAR" property="vmc"/>
+        <result column="dcjrq" jdbcType="DATE" property="dcjrq"/>
+        <result column="dxgrq" jdbcType="DATE" property="dxgrq"/>
+    </resultMap>
+</mapper>

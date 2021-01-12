@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.kingdee.dao.SaleOrderInspurMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.kingdee.model.po.SaleOrder">
+        <id column="vfid" property="vfid" />
+        <result column="vgsdm" property="vgsdm" />
+        <result column="cqj" property="cqj" />
+        <result column="vxstdbh" property="vxstdbh" />
+        <result column="vkhbh" property="vkhbh" />
+        <result column="cdjrq" property="cdjrq" />
+        <result column="vhblx" property="vhblx" />
+        <result column="nzhhl" property="nzhhl" />
+        <result column="vtdzt" property="vtdzt" />
+        <result column="dcjrq" property="dcjrq" />
+        <result column="dxgrq" property="dxgrq" />
+        <result column="vywy" property="vywy" />
+        <result column="vxslx" property="vxslx" />
+    </resultMap>
+
+</mapper>

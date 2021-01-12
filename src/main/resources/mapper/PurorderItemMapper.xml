@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kingdee.dao.PurorderItemMapper" >
+  <resultMap id="BaseResultMap" type="com.kingdee.model.po.PurorderItem" >
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="K_PURORDERITEM" property="kPurorderitem" jdbcType="VARCHAR" />
+    <result column="PURORDERID" property="purorderid" jdbcType="VARCHAR" />
+    <result column="PURORDERITEMID" property="purorderitemid" jdbcType="VARCHAR" />
+    <result column="ERPPRBILLCODE" property="erpprbillcode" jdbcType="VARCHAR" />
+    <result column="ERPPRBILLITEMCODE" property="erpprbillitemcode" jdbcType="VARCHAR" />
+    <result column="MATERIALID" property="materialid" jdbcType="VARCHAR" />
+    <result column="MATERIALCODE" property="materialcode" jdbcType="VARCHAR" />
+    <result column="MATERIALNAME" property="materialname" jdbcType="VARCHAR" />
+    <result column="SPECS" property="specs" jdbcType="VARCHAR" />
+    <result column="QUANTITY" property="quantity" jdbcType="DECIMAL" />
+    <result column="PURUNITID" property="purunitid" jdbcType="VARCHAR" />
+    <result column="TAXINPRICE" property="taxinprice" jdbcType="DECIMAL" />
+    <result column="COMPANYID" property="companyid" jdbcType="VARCHAR" />
+    <result column="TEXT1" property="text1" jdbcType="VARCHAR" />
+    <result column="TEXT2" property="text2" jdbcType="VARCHAR" />
+    <result column="TEXT3" property="text3" jdbcType="VARCHAR" />
+    <result column="TEXT4" property="text4" jdbcType="VARCHAR" />
+    <result column="TEXT5" property="text5" jdbcType="VARCHAR" />
+    <result column="DATE1" property="date1" jdbcType="DATE" />
+    <result column="DATE2" property="date2" jdbcType="DATE" />
+  </resultMap>
+</mapper>
